@@ -1,0 +1,31 @@
+.site-branding-wrapper
+  width: 80px
+  display: inline-block
+  .custom-logo
+    max-width: 90px
+    padding: 15px 0
+
+  .branding-phrase
+    font-family: $primaryfont
+    font-weight: 700
+    text-transform: uppercase
+    margin-left: 20px
+    margin-top: 20px
+    padding: 20px
+    border-left: 2px solid $light-grey
+
+  .site-branding-text
+    position: absolute
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    height: 1px
+    width: 1px
+    margin: -1px
+    padding: 0
+    border: 0
+
+@media (max-width: $small)
+  .site-branding-wrapper
+    .custom-logo
+      max-width: 60px
+      padding: 10px 0

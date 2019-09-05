@@ -1,0 +1,30 @@
+.gallery
+  margin-bottom: 1.5em
+  width: 100%
+
+.gallery-item
+  display: inline-block
+  text-align: center
+  vertical-align: middle
+  width: 100%
+  margin: 0
+  padding: 10px
+
+  // Loops to enumerate the classes for gallery columns.
+  @for $i from 1 through 9
+    .gallery-columns-#{$i} &
+      max-width: ( 100% / $i )
+
+  .gallery-icon
+    a
+      display: block
+      margin: 0
+      padding: 0
+
+.gallery-caption
+  display: block
+  overflow: hidden
+  line-height: 2
+  padding: 0 6px
+  white-space: nowrap
+  text-overflow: ellipsis

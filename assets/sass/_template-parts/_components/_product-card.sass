@@ -1,0 +1,58 @@
+/*------------ Product card styles ------------*/
+
+.product-card
+  box-shadow: 0 1px 12px rgba(19,19,19,.08)
+  overflow: hidden
+  margin-bottom: 30px
+  border: 1px solid #f1f1f1
+  background-color: #fff
+  .product-header
+    .product-link-wrapper
+      display: block
+      position: relative
+      overflow: hidden
+      .product-itsnew
+        position: absolute
+        top: 10px
+        right: 10px
+        margin: 0
+        padding: 10px
+        text-transform: uppercase
+        font-weight: 400
+        font-size: 12px
+        background-color: $primary-color
+        color: $light-color
+        z-index: 1
+      .attachment-woocommerce_single
+        transform: scale(1.0)
+        transition: all .6s
+      &:hover
+        .attachment-woocommerce_single
+          transform: scale(1.2)
+  .product-content
+    padding: 30px
+    .product-title
+      font-size: 15px
+      font-weight: 600
+      margin-bottom: 10px
+      color: $secondary-color
+      &::after
+        display: none
+    .product-box
+      display: flex
+      justify-content: space-between
+      align-items: center
+      .product-description
+        color: $smooth-grey
+        margin: 0 15px 0 0
+        line-height: 1.4
+      .product-link
+        border: 1px solid $blue-grey
+        text-align: center
+        color: $blue-grey
+        .fa
+          padding: 10px 12px
+        &:hover
+          border-color: $primary-color
+          color: $light-color
+          background-color: $primary-color

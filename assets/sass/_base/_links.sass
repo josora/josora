@@ -1,0 +1,78 @@
+/**
+  * ----------------------------------------------------------
+  * ## Links
+  * ----------------------------------------------------------*/
+
+a
+  color: $primary-color
+  text-decoration: none
+  border: none
+
+  &:visited
+    color: $primary-color
+
+  &:hover,
+  &:focus,
+  &:active
+    color: $dark
+    outline: 0
+    border: none
+    -moz-outline-style: none
+
+  &:focus
+    color: $primary-color
+
+
+  &:hover,
+  &:active
+    outline: 0
+
+.primary-btn
+  display: inline-block
+  padding: 15px 30px
+  background-color: transparent
+  border: 1px solid $primary-color
+  color: $primary-color
+  text-transform: uppercase
+  font-size: 12px
+  font-weight: 400
+  transition: all 400ms
+  &:focus
+    background-color: transparent
+    border: 1px solid $primary-color
+    color: $primary-color
+  &:visited
+    background-color: transparent
+    border: 1px solid $primary-color
+    color: $primary-color
+  &:hover
+    color: #fff
+    background-color: $secondary-color
+    border: 1px solid $secondary-color
+  .fa
+    margin-left: 10px
+
+.secondary-btn
+  display: inline-block
+  padding: 15px 30px
+  background-color: transparent
+  color: #fff
+  border: 1px solid #fff
+  text-transform: uppercase
+  font-size: 12px
+  font-weight: 400
+  transition: all 300ms
+  &:focus
+    background-color: transparent
+    color: #fff
+    border: 1px solid #fff
+  &:visited
+    background-color: transparent
+    color: #fff
+    border: 1px solid #fff
+  &:hover
+    color: #fff
+    background-color: $secondary-color
+    border: 1px solid transparent
+  .fa
+    margin-left: 10px

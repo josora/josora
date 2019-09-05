@@ -1,0 +1,42 @@
+@import "_home"
+@import "_page-childs"
+@import "_contacts"
+@import "_operations-locals"
+@import "_blog_page"
+@import "_404"
+@import "_page-products"
+
+.pull-top
+  margin-top: 0
+
+.header-background
+  width: 100%
+  max-width: 100%
+  height: 400px
+  background-color: #f9f9f9
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  display: flex
+  align-items: flex-end
+  margin-bottom: 60px
+  .title-wrapper
+    width: 100%
+    padding: 35px 20px
+    background-color: #fff
+    .title
+      margin-bottom: 0
+      &::after
+        margin-bottom: 0
+
+.page-links-wrapper
+  margin-bottom: 40px
+
+@media (max-width: $small)
+  .pull-top
+    margin-top: 0
+  .header-background
+    height: 300px
+    margin-bottom: 40px
+    .title-wrapper
+      margin: 0 15px

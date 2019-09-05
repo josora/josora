@@ -1,0 +1,116 @@
+/*--------------------------------------------------------------
+  # Cards Styles
+  --------------------------------------------------------------*/
+
+/*------------ Default card styles ------------*/
+.card
+  box-shadow: 0 7px 22px rgba(19,19,19,.08)
+  overflow: hidden
+  border: 1px solid #f1f1f1
+  margin-bottom: 30px
+  &:hover
+    .card-header
+      .card-thumbnail
+        img
+          transform: scale(1.1)
+  .card-header
+    position: relative
+    .thumbnail,
+    .card-thumbnail
+      overflow: hidden
+      img
+        overflow: hidden
+        transition: all .6s
+        vertical-align: middle
+        width: 100%
+  .card-content
+    position: relative
+    padding: 30px 30px 70px 30px
+    .posted-on
+      display: block
+      text-transform: uppercase
+      font-weight: 700
+      font-size: 12px
+      margin-bottom: 10px
+      color: $smooth-grey
+    .card-title
+      margin-bottom: 10px
+      color: $secondary-color
+      font-size: 15px
+      font-weight: 600
+      &::after
+        display: none
+      &:hover
+        color: $primary-color
+    p
+      color: $smooth-grey
+      margin: 0
+      //width: 80%
+      line-height: 1.2
+    .card-link
+      position: absolute
+      right: 20px
+      bottom: 20px
+      border: 1px solid $blue-grey
+      text-align: center
+      color: $blue-grey
+      .fa
+        padding: 12px 16px
+      &:hover
+        border-color: $primary-color
+        color: $light-color
+        background-color: $primary-color
+
+/*------------ News card styles ------------*/
+.news-card
+  box-shadow: 0 7px 22px rgba(19,19,19,.08)
+  overflow: hidden
+  border: 1px solid #f1f1f1
+  margin-bottom: 30px
+  &:hover
+    .news-card-header
+      .card-thumbnail
+        img
+          transform: scale(1.1)
+          filter: contrast(90%)
+  .news-card-header
+    .card-thumbnail
+      overflow: hidden
+      img
+        overflow: hidden
+        transition: all .6s
+        vertical-align: middle
+        width: 100%
+        filter: contrast(80%)
+  .news-card-content
+    position: relative
+    padding: 30px 30px 70px 30px
+    .news-card-title
+      margin-bottom: 10px
+      color: $secondary-color
+      font-size: 15px
+      font-weight: 600
+      &::after
+        display: none
+      &:hover
+        color: $primary-color
+    p
+      color: $smooth-grey
+      margin: 0
+      //width: 80%
+      line-height: 1.2
+    .news-card-link
+      position: absolute
+      right: 20px
+      bottom: 20px
+      border: 1px solid $blue-grey
+      text-align: center
+      color: $blue-grey
+      .fa
+        padding: 12px 16px
+      &:hover
+        border-color: $primary-color
+        color: $light-color
+        background-color: $primary-color
+
+@import "product-card"

@@ -1,0 +1,73 @@
+*,
+*:before,
+*:after
+  box-sizing: border-box
+
+html,
+body
+  margin: 0
+  padding: 0
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  scroll-behavior: smooth
+body
+  position: relative
+
+/* width */
+::-webkit-scrollbar
+    width: 8px
+
+/* Track */
+::-webkit-scrollbar-track
+    //box-shadow: inset 0 0 5px grey
+    //border-radius: 10px
+    background: rgb(255, 255, 255)
+
+/* Handle */
+::-webkit-scrollbar-thumb
+    background: rgb(190, 190, 190)
+    //border-radius: 10px
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+    background: $primary-color
+
+.main-wrapper
+  background: white
+  margin: 60px 0
+
+::selection
+  background-color: $primary-color
+  color: white
+
+@media (max-width: 600px)
+  #wpadminbar
+    position: fixed !important
+
+.admin-bar .fancybox-container
+  top: 32px
+
+body.mobileMenu-open
+  overflow: hidden
+
+.grecaptcha-badge
+  visibility: collapse !important
+  opacity: 0 !important
+  display: none !important
+
+@import "_grid"
+@import "_typography"
+@import "_links"
+@import "_buttons"
+@import "_lists"
+@import "_tables"
+@import "_forms"
+@import "_formatting"
+@import "_accessibility"
+@import "_alignments"
+@import "_clearings"
+@import "_media"
+
+@media (max-width: $small)
+  .main-wrapper
+    margin: 40px 0

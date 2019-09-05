@@ -1,0 +1,66 @@
+/**
+  * ----------------------------------------------------------
+  * ## Cookie bar.
+  * ----------------------------------------------------------*/
+
+#eu-cookie-bar
+  display: none
+  position: fixed
+  left: 0
+  bottom: 0
+  width: 100%
+  transition: all 0.2s ease-out
+  direction: ltr
+  z-index: 9999
+  background-color: $primary-color
+  .cookie-bar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    align-content: center
+    padding: 20px
+    .cookie-text
+      display: flex
+      align-items: center
+      .fa
+        margin-right: 20px
+        color: $light-color
+      p
+        color: $light-color
+        margin: 0
+        font-size: 14px
+
+    .cookie-buttons
+      display: flex
+      margin-left: 20px
+      .cookie-read-more
+        margin-right: 20px
+        padding: 10px 20px
+        text-align: center
+        white-space: nowrap
+      .cookie-accept
+        background-color: $light-color
+        border-color: $light-color
+        color: $secondary-color
+        padding: 10px 20px
+        &:hover
+          background-color: $secondary-color
+          color: $light-color
+          border-color: $secondary-color
+
+@media (max-width: $medium)
+  #eu-cookie-bar
+    .cookie-bar
+      flex-direction: column
+      padding:  20px 10px
+      .cookie-text
+        margin-bottom: 10px
+        .fa
+          margin-right: 10px
+        p
+          font-size: 12px
+      .cookie-buttons
+        display: flex
+        .cookie-accept,
+        .cookie-read-more
+          font-size: 10px

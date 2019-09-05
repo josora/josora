@@ -1,0 +1,37 @@
+.form-wrapper
+  #search-form
+    margin-bottom: 0
+    .input-group
+      display: flex
+      align-content: center
+      justify-content: center
+      //width: 360px
+      .input-search
+        background-color: $light-color
+        color: $smooth-grey
+        border: 1px solid $light-color
+        max-width: 70%
+        padding: 10px
+        margin: 0px
+        &:focus
+          border-color: $primary-color
+        &::placeholder
+          color: $smooth-grey
+          opacity: 1
+        &:-ms-input-placeholder
+          color: $smooth-grey
+        &::-ms-input-placeholder
+          color: $smooth-grey
+
+      #search-submit
+        background-color: $primary-color
+        max-width: 30%
+        font-size: 14px
+        padding: 10px 20px
+        &:hover
+          background-color: $secondary-color
+
+@media (max-width: 1200px)
+ .main-header-wrapper
+   #search-form
+     display: none

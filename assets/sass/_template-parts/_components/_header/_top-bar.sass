@@ -1,0 +1,67 @@
+.top-bar-wrapper
+  background-color: $grey-ultra-light
+  .social-icons
+    a
+      display: inline-block
+      padding: 2px 6px
+      color: $smooth-grey
+      font-size: 13px
+      border-right: 1px solid $light-color
+      transition: all 0.4s ease-in-out 0s
+      &:first-child
+        border-left: 1px solid $light-color
+    .social-icon-facebook:hover
+      color: white
+      background-color: $facebook
+    .social-icon-youtube:hover
+      color: white
+      background-color: $youtube
+    .social-icon-googleplus:hover
+      color: white
+      background-color: $googleplus
+    .social-icon-linkedin:hover
+      color: white
+      background-color: $linkedin
+    .social-icon-twitter:hover
+      color: white
+      background-color: $twitter
+    .social-icon-instagram:hover
+      color: white
+      background-color: $instagram
+
+  .language-wrapper
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    align-content: center
+    .widget_icl_lang_sel_widget
+      .wpml-ls-legacy-list-horizontal
+        background-color: $grey-ultra-light
+        border: none
+        padding: 0
+        ul
+          &::before
+            font-family: 'FontAwesome'
+            content: '\f0ac'
+            display: inline-block
+            color: $primary-color
+            font-size: 13px
+            padding: 0 6px 0
+            border-left: 1px solid $light-color
+            border-right: 1px solid $light-color
+          .wpml-ls-item
+            .wpml-ls-link
+              padding: 0
+              font-family: $primaryfont
+              font-size: 12px
+              color: $smooth-grey
+              padding: 2px 6px
+              border-right: 1px solid $light-color
+              &:hover
+                color: $primary-color
+              .wpml-ls-native
+                vertical-align: inherit
+          .wpml-ls-current-language
+            .wpml-ls-link
+              .wpml-ls-native
+                font-weight: 600

@@ -1,0 +1,105 @@
+.main-navigation-wrapper
+  display: block
+  position: relative
+  width: 100%
+  margin-bottom: 10px
+  z-index: 30
+  .menu
+    list-style-type: none
+    margin: 0
+    padding: 0
+    width: 100%
+    .menu-item
+      display: inline-block
+      padding: 0
+      margin: 0 10px 0 0
+      transition: .5s .2s all cubic-bezier(0.73, 0.06, 0.21, 1.2)
+      &:last-child
+        margin-right: 0
+      a
+        font-family: $primaryfont
+        font-size: 12px
+        font-weight: 400
+        text-transform: uppercase
+        color: $smooth-grey
+        display: block
+        position: relative
+        transition: all .3s
+        padding: 0 0 10px 0
+        &:hover
+          color: $primary-color
+          &::after
+            height: 2px
+        &:after
+          content: ''
+          position: absolute
+          height: 0
+          background-color: $primary-color
+          width: calc(100%)
+          bottom: 0
+          box-sizing: border-box
+          left: 0
+          transition: height 250ms
+          z-index: 31
+      .searchform-toggle
+        color: $primary-color
+
+    .menu-item-has-children
+      position: relative
+      &:hover
+        .sub-menu
+          display: block
+    .sub-menu
+      display: none
+      position: absolute
+      top: 100%
+      left: 0
+      list-style: none
+      margin: 0
+      padding: 0
+      background-color: $blue-grey
+      animation:
+        name: mainsubmenu
+        duration: 400ms
+        timing-function: ease-in-out
+        fill-mode: forwards
+
+      .menu-item
+        padding: 10px 0
+        &:hover
+          background-color: $medium-grey
+        a
+          padding: 10px 20px
+          border-right: none
+          white-space: nowrap
+          font-weight: 600
+          &::after,
+          &::before
+            display: none
+          &:hover
+            color: $secondary-color
+    .current-menu-item
+      a
+        color: $primary-color
+        &:after
+          height: 2px
+          background-color: $primary-color
+    .menu-item-home
+      a::after
+        display: none
+
+@keyframes mainsubmenu
+  0%
+    opacity: 0
+    transform: rotateY(-90deg) translateY(30px)
+  100%
+    opacity: 1
+    transform: rotateY(0deg) translateY(0px)
+
+@media (max-width: 1200px)
+  .main-navigation-wrapper
+    margin-bottom: 0
+
+@media (max-width: $medium)
+  .main-navigation-wrapper
+    display: none

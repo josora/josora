@@ -1,0 +1,58 @@
+.main-header-wrapper
+  .mobile-toggle-wrapper
+    margin-left: 15px
+    .mobile-nav-toggle
+      display: none
+      width: 34px
+      cursor: pointer
+      transition: .3s
+      overflow: hidden
+      span
+        height: 4px
+        width: 30px
+        display: block
+        margin: 4px
+        background-color: $secondary-color
+        transition: .4s
+        &:nth-last-of-type(2)
+          width: 24px
+      &:hover
+        span
+          background-color: $primary-color
+          &:nth-last-of-type(3)
+            width: 22px
+          &:nth-last-of-type(2)
+            width: 30px
+          &:nth-last-of-type(1)
+            width: 22px
+
+
+.mobile-navigation-wrapper
+  .mobile-toggle-wrapper
+    position: absolute
+    top: 20px
+    left: 16px
+    .mobile-nav-toggle
+      position: relative
+      //height: 52px
+      //width: 52px
+      cursor: pointer
+      transition: .3s
+      overflow: hidden
+      span
+        height: 4px
+        width: 30px
+        display: block
+        margin: 4px
+        background-color: $light-color
+        border-radius: 10px
+        transition: .4s
+        &:nth-of-type(1)
+          transform: translateY(10px) rotate(45deg)
+          width: 22px
+        &:nth-of-type(2)
+          transform: translateX(100px)
+          width: 30px
+        &:nth-of-type(3)
+          transform: translateY(-6px) rotate(-45deg)
+          width: 22px

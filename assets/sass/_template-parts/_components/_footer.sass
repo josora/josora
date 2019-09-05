@@ -1,0 +1,137 @@
+.main-footer-wrapper
+  background-color: #f9f9f9
+  box-shadow: 0 20px 16px -20px rgba(19,19,19,.08) inset
+  .footer-extras
+    border-top: 1px solid $light-color
+    box-shadow: 0 20px 16px -20px rgba(19,19,19,.08) inset
+    padding-top: 40px
+    .copyright-text
+      text-align: center
+      color: $smooth-grey
+      margin-bottom: 40px
+      text-transform: uppercase
+      font-size: 12px
+
+    .social-icons
+      text-align: center
+      margin-bottom: 20px
+      a
+        display: inline-block
+        color: $secondary-color
+        margin-left: 10px
+        border: 2px solid $secondary-color
+        padding: 5px
+        .fa
+          width: 20px
+          font-size: 14px
+        &:hover
+          color: $primary-color
+          border-color: $primary-color
+        &:first-child
+          margin-left: 0
+      .social-icon-facebook:hover
+        color: $facebook
+        border-color: $facebook
+      .social-icon-youtube:hover
+        color: $youtube
+        border-color: $youtube
+      .social-icon-googleplus:hover
+        color: $googleplus
+        border-color: $googleplus
+      .social-icon-linkedin:hover
+        color: $linkedin
+        border-color: $linkedin
+      .social-icon-twitter:hover
+        color: $twitter
+        border-color: $twitter
+      .social-icon-instagram:hover
+        color: $instagram
+        border-color: $instagram
+
+    .footer-menu
+      text-align: center
+      margin-bottom: 20px
+      #menu-footer-menu
+        margin: 0
+        padding: 0
+        list-style-type: none
+        .menu-item
+          display: inline-block
+          padding: 0
+          margin: 0
+          &::after
+            content: '|'
+            display: inline-block
+            margin-left: 10px
+          &:last-child
+            &::after
+              content: ''
+          a
+            color: $smooth-grey
+            text-transform: uppercase
+            margin: 0 10px
+            font-size: 12px
+            &:hover
+              color: $medium-grey
+              font-weight: 700
+
+#btn-return-to-top
+  border: 2px solid $secondary-color
+  padding: 10px
+  display: block
+  width: 40px
+  height: 40px
+  .fa
+    color: $secondary-color
+    font-size: 14px
+    transition: all .3s ease
+    vertical-align: text-top
+    &:hover
+      color: $primary-color
+      border-color: $primary-color
+
+@media ( max-width: $medium )
+  .main-footer-wrapper
+    #btn-return-to-top
+      display: none
+    .footer-copyright
+      .col-12
+        &:first-child
+          order: 2
+        &:last-child
+          order: 1
+      .copyright-text
+        text-align: center
+        padding: 0
+        margin-bottom: 40px
+      .social-icons
+        float: none
+        margin: 40px auto
+
+
+
+
+@media (max-width: $small)
+  .main-footer-wrapper
+    .footer-extras
+      .copyright-text
+        margin-bottom: 40px
+        font-size: 10px
+      .footer-menu
+        margin-bottom: 30px
+        margin-top: 10px
+        #menu-footer-menu
+          .menu-item
+            display: block
+            &::after
+              display: none
+            &:last-child
+              a
+                margin-right: 0
+            a
+              margin: 0
+              font-size: 12px
+              margin-right: 5px
+
+#btn-return-to-top
+  margin-right: 15px

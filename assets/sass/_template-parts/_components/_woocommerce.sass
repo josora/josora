@@ -1,0 +1,260 @@
+/*--------------------------------------------------------------
+  # Woocommerce Custom Theme styles
+  --------------------------------------------------------------*/
+
+/*------------ Woocommerce default content wrapper ------------*/
+.woo-content-wrapper
+  font-family: $secondaryfont
+  padding: 40px 0
+  .woocommerce-products-header
+    padding: 40px 0 0
+    p
+      margin-bottom: 0
+  .product_meta
+    display: flex
+    flex-direction: column
+    font-weight: 700
+    a
+      font-weight: 400
+      color: $secondary-color
+      text-transform: capitalize
+    .posted_in
+      margin-top: 20px
+    .tagged_as
+      margin-top: 0
+    .posted_in,
+    .tagged_as
+      margin-bottom: 10px
+      text-transform: uppercase
+      font-size: 12px
+  .entry-summary
+    margin-left: 30px
+
+
+  #reviews
+    .woocommerce-noreviews
+      font-style: italic
+      color: $light-grey
+    #review_form_wrapper
+      #reply-title
+        margin-bottom: 20px
+      #commentform
+        margin-top: 20px
+        .comment-form-rating
+          .rating
+            margin-bottom: 10px
+          .stars
+            margin-top: 10px
+        .comment-form-comment
+          label
+            margin-bottom: 10px
+          textarea
+            margin-top: 10px
+        .form-submit
+          #submit
+            background-color: transparent
+            border: 1px solid $primary-color
+            border-radius: 0px
+            padding: 10px 20px
+            color: $primary-color
+            &:hover
+              background-color: $secondary-color
+              color: #fff
+              border-color: $secondary-color
+
+  .container
+    .product
+      .row
+        .entry-summary
+          width: 47%
+
+
+/*------------ Woocommerce product tabs styles ------------*/
+.woocommerce-page div.product .woocommerce-tabs
+  padding: 40px 0
+  .woocommerce-Tabs-panel
+    h2
+      color: $blue-grey
+      margin-bottom: 40px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        bottom: -10px
+        left: 0
+        width: 40px
+        height: 4px
+        background-color: $light-grey
+    p
+      line-height: 1.5
+      font-size: 14px
+
+.related > h2
+  color: $blue-grey
+  margin-bottom: 40px
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    bottom: -10px
+    left: 0
+    width: 40px
+    height: 4px
+    background-color: $light-grey
+
+/*------------ Woocommerce product card loop styles ------------*/
+li.product
+  box-shadow: 0 7px 22px rgba(19,19,19,.08)
+  overflow: hidden
+  border: 1px solid #f1f1f1
+  background-color: #fff
+  .product-details
+    padding: 30px 20px
+    .excerpt
+      p
+        color: $smooth-grey
+        margin: 0
+        font-size: 14px
+    .product-cat
+      margin-bottom: 5px
+      text-transform: uppercase
+      //font-style: italic
+      font-size: 11px
+      font-family: $secondaryfont
+      color: $primary-color
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title
+  margin-bottom: 10px
+  margin-top: 0
+  padding: 0
+  color: $secondary-color
+  font-size: 15px
+  font-weight: 600
+  &::after
+    display: none
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title
+  color: $secondary-color
+  //font-style: italic
+  font-size: 16px
+  padding: 30px 20px 0px 20px
+  margin-bottom: 10px
+  &::after
+    display: none
+
+.woocommerce ul.products li.product a img
+  margin: 0
+
+/*------------ Product page title styles ------------*/
+.woocommerce div.product .product_title
+  font-size: 18px
+  margin-bottom: 30px
+  font-weight: 600
+  color: $dark
+  &::after
+    content: ''
+    background-color: $primary-color
+    height: 4px
+    display: block
+    width: 60px
+    margin-top: 10px
+
+.woocommerce-products-header__title
+  font-size: 22px
+  font-weight: 600
+  color: $dark
+  margin-bottom: 20px
+  &::after
+    content: ''
+    background-color: $primary-color
+    height: 3px
+    display: block
+    width: 60px
+    margin-top: 5px
+    margin-bottom: 0
+
+
+.product-thumb-wrapper
+  display: block
+  background-color: red
+  width: 100%
+
+/*------------ Product Onsale Stamp on the loop ------------*/
+.woocommerce
+  ul.products
+    li.product
+      .onsale
+        top: 20px
+        right: 20px
+        background-color: $primary-color
+        color: $light-color
+        padding: 10px
+        font-size: 10px
+        text-transform: uppercase
+        border-radius: 0
+        margin: 0
+        line-height: 1
+
+/*------------ Product Onsale Stamp ------------*/
+
+span.itsnew
+  position: absolute
+  top: 20px
+  right: 20px
+  background-color: $primary-color
+  color: $light-color
+  padding: 10px
+  font-size: 10px
+  text-transform: uppercase
+  border-radius: 0
+  margin: 0
+  line-height: 1
+  z-index: 10
+
+/*------------ Product FanvyBox ------------*/
+.pswp__bg
+  background: rgba(0, 0, 0, 0.7)
+
+/*------------ Product Gallery ------------*/
+.woocommerce-product-gallery
+  .flex-viewport
+    margin-bottom: 40px
+
+
+.woo-content-wrapper
+  .woocommerce-products-header
+    .term-description
+      margin-top: 20px
+      p
+        color: $smooth-grey
+        font-size: 14px
+
+.product-cat-description
+  padding: 0px 20px 30px 20px
+  p
+    color: $smooth-grey
+    margin: 0
+    font-size: 14px
+    line-height: 1.8
+
+@media (max-width: $medium)
+  .woo-content-wrapper
+    padding-top: 0
+    .container
+      .product
+        .row
+          .entry-summary
+            width: 100%
+            margin: 0 auto
+            padding: 0 15px
+
+@media (max-width: $small)
+  .woo-content-wrapper
+    padding-top: 0
+    .related
+      .products[class*=columns-]
+        .product
+          width: 100%
+
+  .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product
+    width: 100%
